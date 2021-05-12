@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style_2.css">
+	<title>falta_de_extrusion</title>
+</head>
+<body class="trouble">
+	<!--inicio de navbar-->
+	<main>
+	<nav>
+			<ul>
+						<li class="button gradient"><a class="linkBar" href="../home.html">home</a></li>
+						<li class="button gradient"><a class="linkBar" href="./products.html">productos</a></li>
+						<li class="button gradient"><a class="linkBar" href="./staff.html">nosotros</a></li>
+						<li class="button gradient"><a class="linkBar" href="./3dhacks.html">3dhacks</a></li>	
+						<li class="button gradient"><a class="linkBar" href="./pages/contacto.html">contacto</a></li>
+			</ul>
+			<!--<a href="./pages/nosotros.html"></a><button class="button gradient ">home</button>
+			<button class="button gradient">productos</button>
+			<button class="button gradient">nosotros</button>
+			<button class="button gradient">3dhacks</button>
+			<button class="button gradient">contacto</button>-->
+		</nav>
+			
+			<h1 class="title">3dhacks</h1>
+		
+	<!--finalizacion de navbar-->
+	
+	<!--inicio de card-->
+		<div class="container_extrusion">
+			<div class="card">
+				<div class="card-image">
+					<img src="../media/no_extruye.jpg" height="400" width="400" object-fit="cover" alt="espacio_1">	
+				</div>
+				
+				<div class="card-data">
+					<h3 class="trouble_title">Falta de extrusion</h3>
+					<p>Este problema es muy común para los nuevos propietarios de impresoras 3D, pero afortunadamente, ¡también es muy fácil de resolver! Si su extrusora no está extruyendo plástico al comienzo de su impresión, existen cuatro causas posibles. Repasaremos cada uno de ellos a continuación y explicaremos qué configuraciones se pueden usar para resolver el problema..</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="soluciones">
+				<h3 class ="tr_extrusion">Soluciones</h3>
+				<div class="solucion">	
+					<h3>No se preparo el extrusor antes de empezar a imprimir</h3>
+					<p>La mayoría de las extrusoras tienen la mala costumbre de filtrar plástico cuando están inactivas a alta temperatura. El plástico caliente dentro de la boquilla tiende a supurar fuera de la punta, lo que crea un vacío dentro de la boquilla donde el plástico se ha drenado. Este rezumado inactivo puede ocurrir al comienzo de una impresión cuando está precalentando la extrusora por primera vez, y también al final de la impresión mientras la extrusora se enfría lentamente. Si su extrusora ha perdido algo de plástico debido al supuración, la próxima vez que intente extruir, es probable que pasen unos segundos antes de que el plástico comience a salir nuevamente de la boquilla. Si está intentando iniciar una impresión después de que la boquilla ha estado supurando, es posible que observe la misma extrusión retrasada. Para resolver este problema, asegúrese de cebar su extrusora justo antes de comenzar una impresión para que la boquilla esté llena de plástico y lista para extruir. Una forma común de hacer esto en Simplify3D es incluir algo llamado falda. La falda dibujará un círculo alrededor de su pieza y, en el proceso, imprimará la extrusora con plástico. Si necesita imprimación adicional, puede aumentar el número de contornos de faldón en la pestaña Adiciones en Simplify3D. Algunos usuarios también pueden preferir extruir manualmente el filamento de su impresora usando los controles de avance en el panel de control de la máquina de Simplify3D antes de comenzar la impresión.</p>
+				</div>
+				<div class="solucion">
+					<h3>El nozzle empieza muy cerca de la cama</h3>
+					<p>Si la boquilla está demasiado cerca de la superficie de la mesa de construcción, no habrá suficiente espacio para que el plástico salga de la extrusora. El orificio en la parte superior de la boquilla está esencialmente bloqueado para que no pueda escapar el plástico. Una manera fácil de reconocer este problema es si la impresión no extruye plástico para la primera capa o las dos, pero comienza a extruirse normalmente alrededor de la tercera o cuarta capas a medida que el lecho continúa bajando a lo largo del eje Z. Para resolver este problema, puede utilizar las muy útiles compensaciones de código G que se pueden encontrar en la pestaña Código G de la configuración del proceso de Simplify3D. Esto le permite realizar ajustes muy finos en la posición del eje Z sin necesidad de cambiar el hardware. Por ejemplo, si ingresa un valor de 0.05 mm para el desplazamiento del código G del eje Z, esto alejará la boquilla 0.05 mm de la cama de impresión. Siga aumentando este valor en pequeños incrementos hasta que haya suficiente espacio entre la boquilla y la plataforma de construcción para que escape el plástico.</p>
+				</div>
+				<div class="solucion">
+					<h3>El filamento se ha pelado contra el engranaje de transmisión.</h3>
+					<p>La mayoría de las impresoras 3D utilizan un engranaje pequeño para empujar el filamento hacia adelante y hacia atrás. Los dientes de este engranaje muerden el filamento y le permiten controlar con precisión la posición del filamento. Sin embargo, si nota muchas virutas de plástico o parece que le falta una sección al filamento, es posible que el engranaje impulsor haya eliminado demasiado plástico. Una vez que esto sucede, el engranaje impulsor no tendrá nada a lo que agarrarse cuando intente mover el filamento hacia adelante y hacia atrás. Consulte la sección Filamento de molienda para obtener instrucciones sobre cómo solucionar este problema.</p>
+				</div>
+				<div class="solucion">
+					<h3>La extrusora está obstruida </h3>
+					<p>Si ninguna de las sugerencias anteriores puede resolver el problema, es probable que su extrusora esté obstruida. Esto puede suceder si los residuos extraños quedan atrapados dentro de la boquilla, cuando el plástico caliente permanece dentro de la extrusora durante demasiado tiempo o si el enfriamiento térmico de la extrusora no es suficiente y el filamento comienza a ablandarse fuera de la zona de fusión deseada. La reparación de una extrusora obstruida puede requerir el desmontaje de la extrusora, por lo que debe comunicarse con el fabricante de su impresora antes de continuar. Hemos tenido un gran éxito al usar la cuerda “E” en una guitarra para desatascar extrusoras introduciéndola en la punta de la boquilla, sin embargo, su fabricante también debería poder brindar recomendaciones.</p>
+				</div>
+			</div>
+		</main>
+</body>
+</html>

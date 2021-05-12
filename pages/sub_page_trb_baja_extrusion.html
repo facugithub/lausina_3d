@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style_2.css">
+	<title>baja_extrusion</title>
+</head>
+<body class="trouble">
+	<!--inicio de navbar-->
+	<main>
+	<nav>
+			<ul>
+						<li class="button gradient"><a class="linkBar" href="../home.html">home</a></li>
+						<li class="button gradient"><a class="linkBar" href="./products.html">productos</a></li>
+						<li class="button gradient"><a class="linkBar" href="./staff.html">nosotros</a></li>
+						<li class="button gradient"><a class="linkBar" href="./3dhacks.html">3dhacks</a></li>	
+						<li class="button gradient"><a class="linkBar" href="./pages/contacto.html">contacto</a></li>
+			</ul>
+			<!--<a href="./pages/nosotros.html"></a><button class="button gradient ">home</button>
+			<button class="button gradient">productos</button>
+			<button class="button gradient">nosotros</button>
+			<button class="button gradient">3dhacks</button>
+			<button class="button gradient">contacto</button>-->
+		</nav>
+	<!--finalizacion de navbar-->
+	
+	<h1 class="title">3dhacks</h1>	
+	<!--inicio de card-->
+	<div class="container_extrusion">
+		<div class="card">
+			<div class="card-image">
+				<img src="../media/baja_extrusion.jpg" height="400" width="400" object-fit="cover" alt="espacio_1">	
+			</div>
+			
+			<div class="card-data">
+				<h3 class="trouble_title">Baja extrusion</h3>	
+
+				<p>Cada perfil en Simplify3D incluye configuraciones que se utilizan para determinar cuánto plástico debe extruir la impresora 3D. Sin embargo, debido a que la impresora 3D no proporciona ningún comentario sobre la cantidad de plástico que realmente sale de la boquilla, es posible que salga menos plástico de la boquilla de lo que espera el software (también conocido como subextrusión). Si esto sucede, puede comenzar a notar espacios entre las extrusiones adyacentes de cada capa. La forma más confiable de probar si su impresora está extruyendo suficiente plástico es imprimir un simple cubo de 20 mm de alto con al menos 3 contornos de perímetro. En la parte superior del cubo, verifique si los 3 perímetros están fuertemente unidos entre sí o no. Si hay espacios entre los 3 perímetros, entonces está sub-extruyendo. Si los 3 perímetros se tocan y no tienen espacios, es probable que se encuentre con un problema diferente. Si determina que está subextrusionado, existen varias causas posibles para esto, que hemos resumido a continuación.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="soluciones">
+			<h3 class ="tr_extrusion">Soluciones</h3>
+			<div class="solucion">	
+				<h3>Incorrecto diametro de filamento</h3>
+				<p>Lo primero que desea verificar es que el software conoce el diámetro del filamento que está utilizando. Puede encontrar esta configuración haciendo clic en "Editar configuración de proceso" y yendo a la pestaña Otros. Verifique para asegurarse de que este valor coincida con el filamento que compró. Es posible que incluso desee medir su filamento usted mismo con un par de calibradores para asegurarse de que realmente tiene el diámetro correcto especificado en el software. Los valores más comunes para el diámetro del filamento son 1,75 mm y 2,85 mm. Muchos carretes de plástico también incluyen el diámetro correcto en el embalaje.</p>
+			</div>
+			<div class="solucion">
+				<h3>Incrementa el multiplicador de extrusión</h3>
+				<p>Si el diámetro de su filamento es correcto, pero aún observa problemas de subextrusión, debe ajustar el multiplicador de extrusión. Esta es una configuración muy útil en Simplify3D que le permite modificar fácilmente la cantidad de plástico que se extruye (también conocido como tasa de flujo). Puede encontrar esta configuración haciendo clic en "Editar configuración de proceso" y yendo a la pestaña Extrusora. Cada extrusora de su impresora puede tener un multiplicador de extrusión único, por lo que si está intentando modificar la velocidad de flujo de una extrusora específica, asegúrese de seleccionarla de la lista de la izquierda para cargar la configuración de esa extrusora. Por ejemplo, si su multiplicador de extrusión era 1.0 anteriormente y lo cambia a 1.05, significa que extruirá un 5% más de plástico que antes. Es típico que el PLA imprima con un multiplicador de extrusión cercano a 0,9, mientras que el ABS tiende a tener multiplicadores de extrusión más cercanos a 1,0. Intente aumentar su multiplicador de extrusión en un 5% y luego vuelva a imprimir el cubo de prueba para ver si todavía tiene espacios entre sus perímetros.</p>
+			</div>
+		</div>
+	</main>
+
+</body>
+</html>

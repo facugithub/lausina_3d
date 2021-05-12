@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style_2.css">
+	<title>sub_page_trb_gaps_capas_sup</title>
+</head>
+<body class="trouble">
+	<main>
+	<nav>
+			<ul>
+						<li class="button gradient"><a class="linkBar" href="../home.html">home</a></li>
+						<li class="button gradient"><a class="linkBar" href="./products.html">productos</a></li>
+						<li class="button gradient"><a class="linkBar" href="./staff.html">nosotros</a></li>
+						<li class="button gradient"><a class="linkBar" href="./3dhacks.html">3dhacks</a></li>	
+						<li class="button gradient"><a class="linkBar" href="./pages/contacto.html">contacto</a></li>
+			</ul>
+			<!--<a href="./pages/nosotros.html"></a><button class="button gradient ">home</button>
+			<button class="button gradient">productos</button>
+			<button class="button gradient">nosotros</button>
+			<button class="button gradient">3dhacks</button>
+			<button class="button gradient">contacto</button>-->
+		</nav>
+			
+			<h1 class="title">3dhacks</h1>
+	<!--finalizacion de navbar-->
+	<!--finalizacion de navbar-->
+	
+	<!--inicio de card-->
+	<div class="container_extrusion">
+		<div class="card">
+			<div class="card-image">
+				<img src="../media/gaps.jpg" height="400" width="400" object-fit="cover" alt="espacio_1">	
+			</div>
+			
+			<div class="card-data">
+				<h3 class="trouble_title">Huecos en las capas superiores</h3>
+				<p>Para ahorrar plástico, la mayoría de las piezas impresas en 3D se crean para tener una carcasa sólida que rodea un interior poroso y parcialmente hueco. Por ejemplo, el interior de la pieza puede utilizar un porcentaje de relleno del 30%, lo que significa que solo el 30% del interior es plástico sólido, mientras que el resto es aire. Si bien el interior de la pieza puede estar parcialmente hueco, queremos que el exterior permanezca sólido. Para hacer esto, Simplify3D le permite especificar cuántas capas sólidas desea en la parte superior e inferior de su pieza. Por ejemplo, si estuviera imprimiendo un cubo simple con 5 capas sólidas superior e inferior, el software imprimiría 5 capas completamente sólidas en la parte superior e inferior de la impresión, pero todo lo demás en el medio se imprimiría como una capa parcialmente hueca. Esta técnica puede ahorrar una enorme cantidad de plástico y tiempo, al mismo tiempo que crea piezas muy resistentes gracias a las excelentes opciones de relleno de Simplify3D. Sin embargo, dependiendo de la configuración que esté utilizando, puede notar que las capas sólidas superiores de su impresión no son completamente sólidas. Es posible que vea huecos o agujeros entre las extrusiones que forman estas capas sólidas. Si ha encontrado este problema, aquí hay varias configuraciones simples que puede ajustar para solucionarlo.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="soluciones">
+		<h3 class ="tr_extrusion">Soluciones</h3>
+		<div class="solucion">	
+			<h3>No hay suficientes capas sólidas superiores</h3>
+			<p>La primera configuración que se debe ajustar es el número de capas sólidas superiores que se utilizan. Cuando intenta imprimir una capa 100% sólida sobre su relleno parcialmente hueco, la capa sólida tiene que extenderse a través de las bolsas de aire huecas de su relleno. Cuando esto sucede, las extrusiones de la capa sólida tienden a inclinarse o hundirse en la bolsa de aire. Debido a esto, generalmente desea imprimir varias capas sólidas en la parte superior de su impresión para garantizar una superficie plana y completamente sólida. Como regla general, desea que la sección sólida en la parte superior de la impresión tenga al menos 0,5 mm de grosor. Entonces, si está utilizando una altura de capa de 0,25 mm, necesitará al menos 2 capas sólidas superiores. Si está imprimiendo a una altura de capa inferior, como 0,1 mm, es posible que necesite 5 capas sólidas en la parte superior de la impresión para lograr el mismo efecto. Si nota espacios entre las extrusiones en su superficie superior, lo primero que debe intentar es aumentar la cantidad de capas sólidas superiores. Por ejemplo, si notó el problema con solo 3 capas sólidas superiores, intente imprimir con 5 capas sólidas superiores para ver si el problema mejora. Tenga en cuenta que se producirán capas sólidas adicionales dentro de la dimensión de su pieza y no añaden tamaño al exterior de su pieza. Puede ajustar la configuración de la capa sólida haciendo clic en "Editar configuración de proceso" y seleccionando la pestaña Capa.</p>
+		</div>
+		<div class="solucion">
+			<h3>El porcentaje de relleno es demasiado bajo</h3>
+			<p>El relleno en el interior de su pieza actuará como base para las capas superiores. Las capas sólidas en la parte superior de su pieza deberán imprimirse sobre esta base. Si su porcentaje de relleno es muy bajo, habrá grandes espacios de aire en su relleno. Por ejemplo, si está utilizando un porcentaje de relleno de solo el 10%, el 90% restante del interior de su pieza estaría hueco, y esto crearía algunos espacios de aire muy grandes sobre los que las capas sólidas necesitarían imprimir. Si ha intentado aumentar la cantidad de capas sólidas superiores y todavía ve espacios en la parte superior de su impresión, puede intentar aumentar su porcentaje de relleno para ver si los espacios desaparecen. Por ejemplo, si su porcentaje de relleno era previamente del 30%, intente usar un porcentaje de relleno del 50%, ya que esto proporcionaría una base mucho mejor para las capas sólidas en la parte superior de su impresión.</p>
+		</div>
+		<div class="solucion">
+			<h3>Subextrusión</h3>
+			<p>Si ha intentado aumentar el porcentaje de relleno y la cantidad de capas sólidas superiores, pero aún observa espacios en la parte superior de la impresión, es probable que tenga un problema de subextrusión. Esto significa que su boquilla no está extruyendo tanto plástico como espera el software. Para obtener una descripción completa de este problema y cómo corregirlo, lea la sección Sobreextrusión..</p>
+		</div>
+	</div>
+</main>
+</body>
+
+
+</html>

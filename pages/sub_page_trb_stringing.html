@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=|, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style_2.css">
+	<title>sub_page_trb_stringing</title>
+</head>
+<body class="trouble">
+	<!--inicio de navbar-->
+	<main>
+	<nav>
+			<ul>
+						<li class="button gradient"><a class="linkBar" href="../home.html">home</a></li>
+						<li class="button gradient"><a class="linkBar" href="./products.html">productos</a></li>
+						<li class="button gradient"><a class="linkBar" href="./staff.html">nosotros</a></li>
+						<li class="button gradient"><a class="linkBar" href="./3dhacks.html">3dhacks</a></li>	
+						<li class="button gradient"><a class="linkBar" href="./pages/contacto.html">contacto</a></li>
+			</ul>
+			<!--<a href="./pages/nosotros.html"></a><button class="button gradient ">home</button>
+			<button class="button gradient">productos</button>
+			<button class="button gradient">nosotros</button>
+			<button class="button gradient">3dhacks</button>
+			<button class="button gradient">contacto</button>-->
+		</nav>
+			
+			<h1 class="title">3dhacks</h1>
+	<!--finalizacion de navbar-->
+	<!--finalizacion de navbar-->
+	
+	<!--inicio de card-->
+	<div class="container_extrusion">
+		<div class="card">
+			<div class="card-image">
+				<img src="../media/stringing.jpg" height="400" width="400" object-fit="cover" alt="espacio_1">	
+			</div>
+			
+			<div class="card-data">
+				<h3 class="trouble_title">Stringing or Oozing</h3>
+				<p>El encordado (también conocido como supuración, bigotes o impresiones "peludas") se produce cuando se dejan pequeños hilos de plástico en un modelo impreso en 3D. Por lo general, esto se debe al plástico que rezuma de la boquilla mientras la extrusora se mueve a una nueva ubicación. Afortunadamente, hay varias configuraciones dentro de Simplify3D que pueden ayudar con este problema. La configuración más común que se utiliza para combatir el encordado excesivo es algo que se conoce como retracción. Si la retracción está habilitada, cuando la extrusora termine de imprimir una sección de su modelo, el filamento se empujará hacia atrás en la boquilla para actuar como una contramedida contra el supuración. Cuando sea el momento de empezar a imprimir de nuevo, el filamento volverá a introducirse en la boquilla para que el plástico vuelva a salir por la punta. Para asegurarse de que la retracción esté habilitada, haga clic en "Editar configuración del proceso" y haga clic en la pestaña Extrusora. Asegúrese de que la opción de retracción esté habilitada para cada una de sus extrusoras. En las secciones siguientes, discutiremos las configuraciones de retracción importantes, así como otras configuraciones que se pueden usar para combatir el encordado, como las configuraciones de temperatura de la extrusora.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="soluciones">
+		<h3 class ="tr_extrusion">Soluciones</h3>
+		<div class="solucion">	
+			<h3>Distancia de retracción</h3>
+			<p>El ajuste de retracción más importante es la distancia de retracción. Esto determina la cantidad de plástico que se extrae de la boquilla. En general, cuanto más plástico se retrae de la boquilla, es menos probable que la boquilla rezume mientras se mueve. La mayoría de las extrusoras de accionamiento directo solo requieren una distancia de retracción de 0,5 a 2,0 mm, mientras que algunas extrusoras Bowden pueden requerir una distancia de retracción de hasta 15 mm debido a la mayor distancia entre el engranaje de transmisión de la extrusora y la boquilla calentada. Si encuentra encordado en sus impresiones, intente aumentar la distancia de retracción en 1 mm y pruebe nuevamente para ver si el rendimiento mejora.</p>
+		</div>
+		<div class="solucion">
+			<h3>Velocidad de retracción</h3>
+			<p>El siguiente ajuste de retracción que debe comprobar es la velocidad de retracción. Esto determina qué tan rápido se retrae el filamento de la boquilla. Si se retrae demasiado lentamente, el plástico se derramará lentamente a través de la boquilla y puede comenzar a gotear antes de que la extrusora termine de moverse a su nuevo destino. Si se retrae demasiado rápido, el filamento puede separarse del plástico caliente dentro de la boquilla, o el movimiento rápido del engranaje impulsor puede incluso triturar pedazos de su filamento. Por lo general, hay un punto óptimo entre 1200-6000 mm / min (20-100 mm / s) donde la retracción funciona mejor. Afortunadamente, Simplify3D ya ha proporcionado muchos perfiles preconfigurados que pueden darle un punto de partida para saber qué velocidad de retracción funciona mejor, pero el valor ideal puede variar según el material que esté utilizando, por lo que es posible que desee experimentar para ver si es diferente. las velocidades disminuyen la cantidad de encordado que ve.</p>
+		</div>
+		<div class="solucion">
+			<h3>La temperatura es demasiado alta</h3>
+			<p>Una vez que haya verificado la configuración de retracción, la siguiente causa más común de encordado excesivo es la temperatura de la extrusora. Si la temperatura es demasiado alta, el plástico dentro de la boquilla se volverá menos viscoso y saldrá de la boquilla con mucha más facilidad. Sin embargo, si la temperatura es demasiado baja, el plástico seguirá estando algo sólido y tendrá dificultades para salir de la boquilla. Si cree que tiene la configuración de retracción correcta, pero todavía tiene estos problemas, intente disminuir la temperatura de la extrusora entre 5 y 10 grados. Esto puede tener un impacto significativo en la calidad de impresión final. Puede ajustar esta configuración haciendo clic en "Editar configuración de proceso" y seleccionando la pestaña Temperatura. Seleccione su extrusora de la lista de la izquierda y luego haga doble clic en el punto de ajuste de temperatura que desea editar.</p>
+		</div>
+		<div class="solucion">
+			<h3>Movimientos largos sobre espacios abiertos</h3>
+			<p>Como discutimos anteriormente, el encordado ocurre cuando la extrusora se mueve entre dos ubicaciones diferentes, y durante ese movimiento, el plástico comienza a salir de la boquilla. La duración de este movimiento puede tener un gran impacto en la cantidad de supuración que se produce. Los movimientos cortos pueden ser lo suficientemente rápidos como para que el plástico no tenga tiempo de salir por la boquilla. Sin embargo, es mucho más probable que los movimientos largos creen cuerdas. Afortunadamente, Simplify3D incluye una función extremadamente útil que puede ayudar a minimizar la duración de estos movimientos. El software es lo suficientemente inteligente como para ajustar automáticamente la ruta de viaje para asegurarse de que la boquilla tenga una distancia muy corta para viajar en un espacio abierto. De hecho, en muchos casos, ¡el software puede encontrar una ruta de viaje que evite cruzar un espacio abierto todos juntos! Esto significa que no hay posibilidad de crear una cuerda, porque la boquilla siempre estará encima del plástico sólido y nunca viajará fuera de la pieza. Para usar esta función, haga clic en la pestaña Avanzado y habilite la opción "Evitar cruzar el contorno para el movimiento de viaje".</p>
+		</div>
+		<div class="solucion">
+			<h3>Velocidad de movimiento</h3>
+			<p>Finalmente, también puede encontrar que aumentar la velocidad de movimiento de su máquina también puede reducir la cantidad de tiempo que la extrusora puede supurar al moverse entre las partes. Puede verificar qué velocidades de movimiento está usando su máquina haciendo clic en la pestaña Velocidades de la configuración de su proceso. La velocidad de movimiento del eje X / Y representa la velocidad de desplazamiento de lado a lado y, con frecuencia, está directamente relacionada con la cantidad de tiempo que su extrusora pasa moviéndose al aire libre. Si su máquina puede manejar el movimiento a velocidades más altas, es posible que al aumentar esta configuración también se reduzca el encordado entre las piezas.</p>
+		</div>
+	</div>
+</main>
+</body>
+</html>

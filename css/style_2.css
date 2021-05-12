@@ -1,0 +1,421 @@
+		*{	
+			margin: 0;
+			padding: 0;
+		}
+
+		/**CSS DEL HOME**/
+
+		/**diseño del body**/
+
+		.home_body{
+			background-image: url("../media/background_indexII.jpg");
+			/**background-image: linear-gradient( 109.6deg,  rgba(5,84,94,1) 16%, #bbb 91.1% );**/
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+			
+		}
+		 
+		
+
+
+		/**diseño de navBar**/
+
+		main{
+			width: 80%;
+			margin: 0 auto;
+		}
+		nav{
+			padding: 24px 0;	
+			
+		}
+		li{
+			display: inline-flex;
+
+		}
+		.linkBar{
+			text-decoration: none;
+			color: white;
+		}
+		/**diseño de los botones **/
+
+		.button{
+			padding: 16px 32px;
+			font-size: 15px;
+			font-weight: 600;
+			background: transparent;
+			border: 2px solid white;
+			border-radius: 30px;
+			text-transform: uppercase;
+			color:white	;
+			margin: 40px;
+
+		}
+
+		.button.gradient{
+			border:4px solid white ;
+			outline:0;
+			background-image:none ;
+			transition: all cubic-bezier(0.215,0.610,0.355,1).5s ;
+		}
+
+		.button.gradient:hover{
+			cursor: pointer;
+			transform: translateY(-3px);
+
+		}
+
+		.button.gradient:active{ 
+		transform: translateY(3PX);	
+
+		 }
+
+
+		/**diseño de titulo y subtitulo del Main**/
+		 
+	 h1{
+	font-family: 'Anton';
+	text-align: center;
+	font-size: 80px;
+	color: white;
+	font-weight:200;
+	text-transform: uppercase;}
+
+	h2{
+	font-family: 'Anton';
+	text-align: center;
+	font-size: 60px;
+	color: black;
+	font-weight:100;
+	text-transform: uppercase;
+
+}
+h2:hover{
+	color:white; 
+}
+
+	.main {
+	display: flex;
+	opacity: .8
+	
+}
+
+.texto_productos{
+	text-align: center;
+}
+.main_1, .main_2 {
+	margin: 40px 40px;
+	padding: 40px 40px;
+}
+
+.image_2{
+	margin-top: -80px;
+}
+		/** diseño del footer**/
+
+	footer{
+	background-color: transparent;
+	border: 2px solid white;
+	opacity: 0.8;
+	overflow: hidden;
+	border-radius: 50px;
+	
+}
+.links,.socialMedia,.submit{
+	float: left;
+	margin: auto;
+	padding: 80px;
+}
+
+
+.links_footer, .socialMedia_footer{
+	text-decoration: none;
+	color: white;
+}
+
+.socialMedia_footer{
+	margin: 10px;
+	
+}
+
+/**CSS DE PRODUCTS**/
+.products_body{
+			background-image: url("../media/background_productII.jpg");
+			/**background-image: linear-gradient( 109.6deg,  rgba(5,84,94,1) 16%, #bbb 91.1% );**/
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+/**grids de products**/
+	.grids_products{
+		display: grid;
+		grid-template-areas: 
+		"products_card products_card products_card "
+		"products_card products_card products_card"
+		"products_card products_card products_card"
+		 ; /**aca surge una duda... cuando configuro el grid-template-areas, pareciera ser que este tiene prioridad sobre el grid-template-colums, es decir por mas que elija que quiera 3 columnas si dispongo las areas en 4 columnas me respeta esto mas que el grid-template-columns**/
+	 
+	 grid-template-columns: repeat(3,1fr);
+	 grid-template-rows: repeat(2,1fr);
+	 align-content: center;
+	 box-sizing: border-box;
+	 margin: 100px 60px 40px 30px;	
+	 grid-row-gap: 60px;
+	 text-align: center;
+
+
+}
+.card_text{
+	padding: 5px 5px;
+	text-align: center;
+	overflow: auto;
+	color: white;
+	font-family: 'Antonio', sans-serif;	
+}
+
+.products_title{
+	font-family: "Anton";
+	text-transform: uppercase;
+	color: white;
+	font-weight: 200;
+}
+.products_card{
+	grid-area: "products_card";
+	
+}
+.products_image{
+	border-radius: 50px;
+}
+
+/**CSS STAFF**/
+
+
+.staff_body{
+
+			background-image: url("../media/background_indexIII.jpg");
+			/**background-image: linear-gradient( 109.6deg,  rgba(5,84,94,1) 16%, #bbb 91.1% );**/
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		
+}
+
+/**flexbox staff**/
+.container{
+	margin:20px	60px ;
+	border: 0;  
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.card{
+background: transparent;
+width: 600px;	
+overflow: hidden;
+margin: 20px 40px 20px 20px;
+ display: flex;
+}
+
+
+
+.card-image img{
+		width: 200px;
+		height: 200px;
+		margin: 10px; 
+		border-radius: 30%;	
+		box-shadow: 2px 2px 5px #c7c7c7;
+}
+	
+
+.card-data{
+padding: 0 20 0 0;
+display: flex;
+flex-direction: column;
+color: white;
+opacity: .9
+
+}
+
+.card-data h2{
+margin: 10px 0px 30px 0px;
+	font-weight: 400;
+
+}
+.card-data p {
+
+}
+.card-data a {
+text-decoration: none;
+background: transparent; 
+padding: 15px 20px;
+width: 100px;
+color: black;
+font-family: sans-serif;
+
+}
+
+/**CSS 3DHACKS**/
+
+ .hacks_body{
+
+			background-image: url("../media/3dhacks_back.jpg");
+			/**background-image: linear-gradient( 109.6deg,  rgba(5,84,94,1) 16%, #bbb 91.1% );**/
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+
+.grids{
+	display: grid;
+	grid-template-areas:
+	 "no_extruye baja_extrusion sobre_extrusion" 
+	 "gaps stringing despegamiento_cama"
+	 " sobrecalentamiento corrimiento_capas separacion_capas ";
+	 
+	 grid-template-columns: repeat(3,1fr);
+	 grid-template-rows: repeat(3,1fr);
+	 align-content: center;
+	 box-sizing: border-box;
+	 grid-row-gap: 30px;
+
+
+}
+
+#no_extruye{
+	grid-area: "no_extruye"; 
+
+}
+
+#baja_extrusion{
+	grid-area: "baja_extrusion";
+}
+
+#sobre_extrusion{
+	grid-area: "sobre_extrusion";
+}
+
+#despegamiento_cama{
+	grid-area: "despegamiento_cama";
+}
+#gaps{
+grid-row-end: "gaps";	
+}
+#stringing{
+	grid-area: "stringing";
+}
+#sobrecalentamiento{
+	grid-area: "sobrecalentamiento";
+}
+
+#corrimiento_capas{
+grid-area: "corrimiento_capas";
+}
+#separacion_capas{
+	grid-area: "separacion_capas"
+}
+
+.grids p{
+	align-items: center;
+	width: 300px;
+	text-align: center;
+	color: white;
+}
+
+h3{
+	text-align: auto;
+	margin-left: 70px;
+	color: white;
+	opacity: .8;
+}
+
+.img_problema{
+	border-radius:20px;
+}
+
+/**CSS de las subpages**/	
+
+.trouble{
+	background-color: #0D0D0D;
+	box-sizing: border-box;
+}
+.container_extrusion{
+	margin:20px	60px ;
+	border: 2px solid #c7c7c7;  
+	border-radius: 20px;
+}
+
+
+.card{
+width: auto;	
+display: flex;
+}	
+.card-image img{
+		width: 200px;
+		height: 200px;
+		margin: 10px; 
+		border-radius: 30%;	
+}
+.card-data{
+padding: 0 20 0 0;
+display: flex;
+flex-direction: column;
+color: white;	
+text-align: center;
+
+}
+
+
+.card-data{
+	margin-right:210px;
+}
+.solucion{
+	margin:40px;
+}
+.soluciones{
+	margin:20px	60px ;
+	border: 2px solid #c7c7c7;  
+	border-radius: 20px;
+	color: white;
+	opacity: .9;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	height: auto;
+
+}
+.tr_extrusion{
+	text-align: center;
+}
+
+/**.solucion{
+	margin: 20px 20px;
+	padding: auto;
+}**/	
+
+#trouble{
+	text-align: center;
+}
+.trouble_title{
+	padding: 10px;
+}
+
+/**CSS DE CONTACTO**/
+.contactBody{
+
+			background-image: url("../media/contacto.jpg");
+			/**background-image: linear-gradient( 109.6deg,  rgba(5,84,94,1) 16%, #bbb 91.1% );**/
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+/**medias queries**/
+
+

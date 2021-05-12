@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style_2.css">
+	<title>Document</title>
+</head>
+<body class="trouble">
+<!--inicio de navbar-->
+	<main>
+	<nav>
+			<ul>
+						<li class="button gradient"><a class="linkBar" href="../home.html">home</a></li>
+						<li class="button gradient"><a class="linkBar" href="./products.html">productos</a></li>
+						<li class="button gradient"><a class="linkBar" href="./staff.html">nosotros</a></li>
+						<li class="button gradient"><a class="linkBar" href="./3dhacks.html">3dhacks</a></li>	
+						<li class="button gradient"><a class="linkBar" href="./pages/contacto.html">contacto</a></li>
+			</ul>
+			<!--<a href="./pages/nosotros.html"></a><button class="button gradient ">home</button>
+			<button class="button gradient">productos</button>
+			<button class="button gradient">nosotros</button>
+			<button class="button gradient">3dhacks</button>
+			<button class="button gradient">contacto</button>-->
+		</nav>
+			
+			<h1 class="title">3dhacks</h1>
+	<!--finalizacion de navbar-->
+	
+	<!--inicio de card-->
+	<div class="container_extrusion">
+		<div class="card">
+			<div class="card-image">
+				<img src="../media/despegamiento_cama.jpg" height="400" width="400" object-fit="cover" alt="espacio_1">	
+			</div>
+			
+			<div class="card-data">
+				<h3 class="trouble_title">No pegarse a la cama</h3>
+				<p>Es muy importante que la primera capa de su impresión esté fuertemente conectada a la plataforma de construcción de la impresora para que el resto de su pieza se pueda construir sobre esta base. Si la primera capa no se adhiere a la plataforma de construcción, creará problemas más adelante. Hay muchas formas diferentes de hacer frente a estos problemas de adhesión de la primera capa, por lo que examinaremos varias causas típicas a continuación y explicaremos cómo abordar cada una.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="soluciones">
+		<h3 class ="tr_extrusion">Soluciones</h3>
+		<div class="solucion">	
+			<h3>La plataforma de construcción no está nivelada</h3>
+			<p>Muchas impresoras incluyen una cama ajustable con varios tornillos o perillas que controlan la posición de la cama. Si su impresora tiene una plataforma ajustable y tiene problemas para que su primera capa se adhiera a la plataforma, lo primero que debe verificar es que la plataforma de la impresora esté plana y nivelada. Si la cama no está nivelada, un lado de la cama puede estar demasiado cerca de la boquilla, mientras que el otro lado está demasiado lejos. Lograr una primera capa perfecta requiere una cama de impresión nivelada. Simplify3D ya incluye un útil asistente de nivelación de la cama que lo guiará a través del proceso de nivelación de la cama. Puede encontrar este asistente yendo a Herramientas> Asistente de nivelación de la cama y siguiendo las instrucciones en pantalla.</p>
+		</div>
+		<div class="solucion">
+			<h3>La boquilla comienza demasiado lejos de la cama</h3>
+			<p>Una vez que su cama se haya nivelado correctamente, aún debe asegurarse de que la boquilla comience a la altura correcta en relación con la plataforma de construcción. Su objetivo es ubicar su extrusora a la distancia perfecta de la placa de construcción, ni demasiado lejos ni demasiado cerca. Para una buena adhesión a la placa de construcción, desea que su filamento quede ligeramente aplastado contra la placa de construcción. Si bien puede ajustar esta configuración modificando el hardware, generalmente es mucho más fácil (¡y mucho más preciso!) Realizar estos cambios desde Simplify3D. Para hacer esto, haga clic en "Editar configuración del proceso" para abrir la configuración del proceso y luego vaya a la pestaña Código G. Puede utilizar la compensación de código G global del eje Z para realizar ajustes muy precisos en la posición de la boquilla. Por ejemplo, si ingresa -0.05 mm para el desplazamiento del código G del eje Z, la boquilla comenzará a imprimir 0.05 mm más cerca de su plataforma de construcción. Tenga cuidado de realizar solo pequeños ajustes en esta configuración. Cada capa de su pieza suele tener un grosor de solo 0,2 mm, por lo que un pequeño ajuste ayuda mucho.</p>
+		</div>
+		<div class="solucion">
+			<h3>La primera capa imprime demasiado rápido.</h3>
+			<p>As you extrude the first layer of plastic on top of the build platform, you want to make sure that plastic can properly bond to the surface before starting the next layer. If you print the first layer too fast, the plastic may not have time to bond to the build platform. For this reason, it is typically very useful to print the first layer at a slower speed so that the plastic has time to bond to the bed. Simplify3D provides a setting for this exact feature. If you click on “Edit Process Settings” and go to the Layer tab, you will see a setting labeled “First Layer Speed”. For example, if you set a first layer speed of 50%, it means that your first layer will print 50% slower than the rest of your part. If you feel that your printer is moving too fast on the first layer, try reducing this setting.</p>
+		</div>
+		<div class="solucion">
+			<h3>Configuraciones de temperatura o enfriamiento </h3>
+			<p>El plástico tiende a encogerse a medida que se enfría de una temperatura cálida a una fría. Para proporcionar un ejemplo útil, imagine una pieza de 100 mm de ancho que se imprime con plástico ABS. Si la extrusora estaba imprimiendo este plástico a 230 grados Celsius, pero se estaba depositando en una plataforma de construcción fría, es probable que el plástico se enfríe rápidamente después de dejar la boquilla caliente. Algunas impresoras también incluyen ventiladores de enfriamiento que aceleran este proceso de enfriamiento cuando se están utilizando. Si esta parte de ABS se enfriara a una temperatura ambiente de 30 ° C, la parte de 100 mm de ancho se encogería en casi 1,5 mm. Desafortunadamente, la plataforma de construcción de su impresora no se encogerá tanto, ya que normalmente se mantiene a una temperatura bastante constante. Debido a este hecho, el plástico tenderá a separarse de la plataforma de construcción a medida que se enfría. Este es un hecho importante que debe tener en cuenta al imprimir su primera capa. Si nota que la capa parece pegarse inicialmente, pero luego se separa de la cama de impresión a medida que se enfría, es posible que la temperatura y la configuración de enfriamiento sean las culpables.
+				Muchas impresoras que están diseñadas para imprimir materiales de alta temperatura como ABS incluyen una cama con calefacción para ayudar a combatir estos problemas. Si la cama se calienta para mantener una temperatura de 110 ° C durante toda la impresión, mantendrá la primera capa caliente para que no se encoja. Entonces, si su impresora tiene una cama con calefacción, es posible que desee intentar calentar la cama para evitar que la primera capa se enfríe. Como punto de partida general, el PLA tiende a adherirse bien a un lecho que se calienta a 60-70 ° C, mientras que el ABS generalmente funciona mejor si el lecho se calienta a 100-120 ° C. Puede ajustar esta configuración en Simplify3D haciendo clic en "Editar configuración de proceso" y luego seleccionando la pestaña Temperatura. Elija su plataforma de construcción con calefacción de la lista en el lado izquierdo y luego edite el punto de ajuste de temperatura para la primera capa. Puede simplemente hacer doble clic en el valor para cambiarlo.
+
+			Si su impresora tiene un ventilador de enfriamiento, también puede intentar deshabilitar ese ventilador de enfriamiento para las primeras capas de su impresora para que las capas iniciales no se enfríen demasiado rápido. Puede hacerlo haciendo clic en "Editar configuración de proceso" y yendo a la pestaña Refrigeración. Puede ajustar los puntos de ajuste de la velocidad del ventilador en el lado izquierdo. Por ejemplo, es posible que desee que la primera capa comience con el ventilador desactivado y luego encienda el ventilador a máxima potencia una vez que llegue a la quinta capa. En ese caso, deberá agregar dos puntos de ajuste en esa lista: Capa 1 al 0% de velocidad del ventilador y Capa 5 al 100% de velocidad del ventilador. Si está utilizando plástico ABS, es común desactivar el ventilador de enfriamiento para toda la impresión, por lo que ingresar un solo punto de ajuste sería suficiente (Capa 1 a 0% de velocidad del ventilador). Si está trabajando en un entorno con brisa, es posible que también desee tratar de aislar su impresora para mantener el viento alejado de su pieza.</p>
+		</div>
+		<div class="solucion">
+			<h3>La superficie de la plataforma de construcción (cinta, pegamentos y materiales)</h3>
+			<p>Los diferentes plásticos tienden a adherirse mejor a diferentes materiales. Por esta razón, muchas impresoras incluyen un material de plataforma de construcción especial que está optimizado para sus materiales. Por ejemplo, varias imprentas usan una hoja BuildTak en la parte superior de su cama que tiende a adherirse muy bien al PLA. Otros fabricantes optan por un lecho de vidrio tratado térmicamente, como el vidrio de borosilicato, que tiende a funcionar muy bien para el ABS cuando se calienta. Si va a imprimir directamente sobre estas superficies, siempre es una buena idea asegurarse de que su plataforma de construcción esté libre de polvo, grasa o aceites antes de comenzar a imprimir. Limpiar la plataforma de impresión con un poco de agua o alcohol isopropílico puede marcar una gran diferencia.
+
+			Si su impresora no incluye un material de plataforma de construcción especial para ayudar con la adhesión, ¡aún tiene opciones! Afortunadamente, existen varios tipos de cinta que se adhieren bien a los materiales de impresión 3D comunes. Se pueden aplicar tiras de cinta a la superficie de la plataforma de construcción y quitarlas o reemplazarlas fácilmente si desea imprimir con un material diferente. Por ejemplo, el PLA tiende a adherirse bien a la cinta de pintor azul, mientras que el ABS tiende a adherirse mejor a la cinta Kapton (también conocida como película de poliimida). Muchos usuarios también han tenido un gran éxito usando un pegamento temporal o un aerosol en la parte superior de sus plataformas de construcción. Laca para el cabello, barras de pegamento y otras sustancias pegajosas tienden a funcionar muy bien si todo lo demás falla. ¡Siéntete libre de experimentar para ver qué funciona mejor para ti!</p>
+		</div>
+		<div class="solucion">
+			<h3>Cuando todo lo demás falla: Brims and Balsas</h3>
+			<p>A veces, está imprimiendo una pieza muy pequeña que simplemente no tiene suficiente área de superficie para adherirse a la superficie de la plataforma de construcción. Simplify3D incluye varias opciones que pueden ayudar a aumentar esta área de superficie para proporcionar una superficie más grande para adherirse a la cama de impresión. Una de estas opciones se llama "borde". El ala agrega anillos adicionales alrededor del exterior de su parte, similar a cómo el ala de un sombrero aumenta la circunferencia del sombrero. Esta opción se puede habilitar yendo a la pestaña "Adiciones" habilitando la opción "Usar falda / ala". Simplify3D también permite a los usuarios agregar una balsa debajo de su parte, que también se puede usar para proporcionar una superficie más grande para la adhesión de la cama. Si está interesado en estas opciones, eche un vistazo a nuestro tutorial Balsas, faldas y ala, que explica las cosas con mayor detalle.</p>
+		</div>
+	</div>
+</main>
+</body>
+</html>

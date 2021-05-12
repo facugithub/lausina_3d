@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style_2.css">
+	<title>sub_page_trb_sobrecalentamiento</title>
+</head>
+<body class="trouble">
+	<main>
+	<nav>
+			<ul>
+						<li class="button gradient"><a class="linkBar" href="../home.html">home</a></li>
+						<li class="button gradient"><a class="linkBar" href="./products.html">productos</a></li>
+						<li class="button gradient"><a class="linkBar" href="./staff.html">nosotros</a></li>
+						<li class="button gradient"><a class="linkBar" href="./3dhacks.html">3dhacks</a></li>	
+						<li class="button gradient"><a class="linkBar" href="./pages/contacto.html">contacto</a></li>
+			</ul>
+			<!--<a href="./pages/nosotros.html"></a><button class="button gradient ">home</button>
+			<button class="button gradient">productos</button>
+			<button class="button gradient">nosotros</button>
+			<button class="button gradient">3dhacks</button>
+			<button class="button gradient">contacto</button>-->
+		</nav>
+	<h1 class="title">3dhacks</h1>
+	<!--inicio de card-->
+	<div class="container_extrusion">
+		<div class="card">
+			<div class="card-image">
+				<img src="../media/sobrecalentamiento.jpg" height="400" width="400" object-fit="cover" alt="espacio_1">	
+			</div>
+			
+			<div class="card-data">
+				<h3 class="trouble_title">Sobrecalentamiento</h3>
+				<p>El plástico que sale de su extrusora puede estar entre 190 y 310 grados Celsius. Mientras que el plástico todavía está caliente, es flexible y se puede moldear fácilmente en diferentes formas. Sin embargo, a medida que se enfría, rápidamente se solidifica y conserva su forma. Debe lograr el equilibrio correcto entre temperatura y enfriamiento para que su plástico pueda fluir libremente a través de la boquilla, pero pueda solidificarse rápidamente para mantener las dimensiones exactas de su pieza impresa en 3D. Si no se logra este equilibrio, es posible que comience a notar algunos problemas de calidad de impresión en los que el exterior de su pieza no es tan preciso y definido como le gustaría. Como puede ver en la imagen de la izquierda, el filamento extruido en la parte superior de la pirámide no pudo enfriarse lo suficientemente rápido como para mantener su forma. La siguiente sección examinará varias causas comunes de sobrecalentamiento y cómo prevenirlas.</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="soluciones">
+		<h3 class ="tr_extrusion">Soluciones</h3>
+		<div class="solucion">	
+			<h3>Refrigeración insuficiente</h3>
+			<p>La causa más común de sobrecalentamiento es que el plástico no se enfría lo suficientemente rápido. Cuando esto sucede, el plástico caliente puede cambiar de forma a medida que se enfría lentamente. Para muchos plásticos, es mucho mejor enfriar rápidamente las capas para evitar que cambien de forma después de imprimirse. Si su impresora incluye un ventilador de enfriamiento, intente aumentar la potencia del ventilador para enfriar el plástico más rápido. Puede hacer esto haciendo clic en "Editar configuración de proceso" y seleccionando la pestaña Refrigeración. Simplemente haga doble clic en el punto de ajuste de velocidad del ventilador que desea editar. Este enfriamiento adicional ayudará al plástico a conservar su forma. Si su impresora no incluye un ventilador de enfriamiento integrado, puede intentar instalar un ventilador de mercado secundario o usar un pequeño ventilador de mano para enfriar las capas más rápido.</p>
+		</div>
+		<div class="solucion">
+			<h3>Impresión a una temperatura demasiado alta</h3>
+			<p>Si ya está utilizando un ventilador de refrigeración y sigue viendo este problema, puede intentar imprimir a una temperatura más baja. Si el plástico se extruye a una temperatura más baja, podrá solidificarse más rápido y conservar su forma. Intente bajar la temperatura de impresión de 5 a 10 grados para ver si ayuda. Puede hacer esto haciendo clic en "Editar configuración de proceso" y seleccionando la pestaña Temperatura. Simplemente haga doble clic en el punto de ajuste de temperatura que desea cambiar. Tenga cuidado de no bajar demasiado la temperatura, ya que de lo contrario, es posible que el plástico no esté lo suficientemente caliente como para salir a través de la pequeña abertura de la boquilla.</p>
+		</div>
+		<div class="solucion">
+			<h3>Impresión demasiado rápida</h3>
+			<p>Si imprime cada capa muy rápidamente, es posible que no deje suficiente tiempo para que la capa anterior se enfríe correctamente antes de intentar depositar la siguiente capa de plástico caliente encima. Esto es particularmente importante para piezas muy pequeñas donde cada capa solo requiere unos segundos para imprimirse. Incluso con un ventilador de enfriamiento, es posible que deba disminuir la velocidad de impresión de estas capas pequeñas para asegurarse de que tiene suficiente tiempo para que la capa se solidifique. Afortunadamente, Simplify3D incluye una opción muy simple para hacer exactamente eso. Si hace clic en "Editar configuración de proceso" y selecciona la pestaña Velocidades, verá una sección denominada "Anulaciones de velocidad". Esta sección se utiliza para ralentizar automáticamente la velocidad de impresión de las capas pequeñas para garantizar que tengan tiempo suficiente para enfriarse y solidificarse antes de imprimir la siguiente capa. Por ejemplo, si permite que el software ajuste la velocidad de impresión de las capas que tardan menos de 15 segundos en imprimirse, el programa reducirá automáticamente la velocidad de impresión de estas capas pequeñas. Esta es una característica vital para combatir estos problemas de sobrecalentamiento.</p>
+		</div>
+		<div class="solucion">
+			<h3>Cuando todo lo demás falla: intente imprimir varias piezas a la vez</h3>
+			<p>Si ya probó los 3 elementos anteriores y aún tiene problemas para lograr un enfriamiento suficiente, hay una cosa más que puede probar. Cree una copia de la parte que está intentando imprimir (Editar> Copiar / Pegar) o importe un segundo objeto que pueda imprimirse al mismo tiempo. Al imprimir dos objetos a la vez, puede proporcionar más tiempo de enfriamiento para cada pieza individual. La boquilla caliente deberá moverse a una ubicación diferente en la plataforma de construcción para imprimir la segunda parte, lo que proporciona un pequeño alivio para que la primera parte se enfríe. Esta es una estrategia simple pero muy efectiva para solucionar problemas de sobrecalentamiento.</p>
+		</div>
+	</div>
+</main>
+</body>
+</html>

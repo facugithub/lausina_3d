@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/style_2.css">
+  <title>contacto</title>
+</head>
+<body class="contactBody">
+<main>
+  <nav>
+      <ul>
+            <li class="button gradient"><a class="linkBar" href="../home.html">home</a></li>
+            <li class="button gradient"><a class="linkBar" href="./products.html">productos</a></li>
+            <li class="button gradient"><a class="linkBar" href="./staff.html">nosotros</a></li>
+            <li class="button gradient"><a class="linkBar" href="./3dhacks.html">3dhacks</a></li> 
+            <li class="button gradient"><a class="linkBar" href="./contact.html">contacto</a></li>
+      </ul>
+      <!--<a href="./pages/nosotros.html"></a><button class="button gradient ">home</button>
+      <button class="button gradient">productos</button>
+      <button class="button gradient">nosotros</button>
+      <button class="button gradient">3dhacks</button>
+      <button class="button gradient">contacto</button>-->
+    </nav>
+	
+	<form action="home.html" method="GET"> <!--1.la etiqueta label va acompañada del input_ 2. for debe llevar el mismo atributo que id o name -->
+  <label for="Nombre">Nombre:</label><br>							  <input type="text" id="Nombre" name="Nombre" value=""><br>
+  <label for="Apellido">Apellido:</label><br>
+  <input type="text" id="Apellido" name="Apellido" value=""><br>
+  <label for="email">email:</label><br>							  <input type="text" id="email" name="email" value=""><br><br>
+  <label for="newsletter">Desea recibir el Newsletter</label>
+  <input type="checkbox" id="newsletter" name="newsletter" value="1"><br><br>
+
+
+  <label for="mensaje">mensaje</label><br>
+  <textarea name="mensaje" cols="20" rows="10"></textarea>	
+  <h3>Elija en que sucursal desea ser asesorado personalmente</h3>
+
+  <select name="sucursal">
+   	<option value="boedo">Boedo</option>		
+   	<option value="once">Once</option>		
+   	<option value="avellaneda">Avellaneda</option>		
+   	<option value="retiro">Retiro</option>		
+   	</select>
+
+  <input type="submit" value="Enviar ">
+  <input type="reset" name="resetear">
+    </form>
+  </main>
+</body>
